@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en" id="dark-mode-14" class="sun-mode-1">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <link href="css/search/sidebars.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light sun-mode-1" id="dark-mode-15"
+        style="padding-bottom: 0px !important; margin-top: 1rem !important; padding-top: 8px !important;">
+        <div class="container-fluid sun-mode-1 " id="dark-mode-1">
+            <div>
+                <a href="index.html"><img src="img/tbg-2.svg" width="50" height="50" alt=""></a>
+                <a class="ms-3 logo-text" href="index.html"><img src="img/logo1.svg" width="180" height="60"></a>
+            </div>
+            <form class="d-flex position-absolute top-50 start-50 translate-middle mt-1" method="get"
+                action="/search.html">
+                <input class="form-control me-2 search-control"
+                    style=" border-radius: 0.7rem ; font-family: 'Times New Roman', Times, serif;" type="search"
+                    placeholder="Enter Your ETH Wallet Address" name="address" pattern="0x[a-fA-F0-9]{40}$"
+                    aria-label="Search">
+                <button class="btn btn-outline-success search-button sun-mode-4" id="dark-mode-11"
+                    style="border-radius: 1rem !important;font-family: 'Times New Roman', Times, serif;"
+                    type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="d-none d-md-block">
+        <main class="d-flex flex-shrink-0 bg-light w-100 h-100 sun-mode-1" id="dark-mode-2">
+            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center flex-nowrap h-100 ms-1">
+                <li class="nav-item mt-5 sidee">
+                    <a href="index.html" class="nav-link  py-3 border-bottom" aria-current="page" title="Home"
+                        data-bs-toggle="tooltip" data-bs-placement="right">
+                        <img id="home1" class="size-image" src="img/home-svgrepo-com.svg">
+                        <img id="home2" class="size-image d-none" src="img/dark/home-svgrepo-com.svg">
+                    </a>
+                </li>
+                <li class="mt-5 mb-1 sidee">
+                    <a href="history.html" class="nav-link py-3 border-bottom" title="History" data-bs-toggle="tooltip"
+                        data-bs-placement="right">
+                        <img id="history1" class="size-image" src="img/history-svgrepo-com.svg">
+                        <img id="history2" class="size-image d-none" src="img/dark/history-svgrepo-com.svg">
+
+                    </a>
+                </li>
+                <li class=" mt-5 mb-1 sidee">
+                    <a href="#" class="nav-link py-3 border-bottom" title="Portfolio (soon)" data-bs-toggle="tooltip"
+                        data-bs-placement="right">
+                        <img id="chart1" class="size-image" src="img/chart-svgrepo-com.svg">
+                        <img id="chart2" class="size-image d-none" src="img/dark/chart-svgrepo-com.svg">
+
+                    </a>
+                </li>
+                <li class="mt-5 mb-1 sidee">
+                    <a href="#" class="nav-link py-3 border-bottom" title="About Us" data-bs-toggle="tooltip"
+                        data-bs-placement="right">
+                        <img id="about1" class="size-image" src="img/about-us-svgrepo-com.svg">
+                        <img id="about2" class="size-image d-none" src="img/dark/about-us-svgrepo-com.svg">
+
+                    </a>
+                </li>
+                <li class="mt-5 mb-1 sidee">
+                    <a href="#" class="nav-link py-3 border-bottom" title="Dark mode" data-bs-toggle="tooltip"
+                        data-bs-placement="right">
+                        <img id="sun" class="size-image" src="img/sun-svgrepo-com.svg" style="width: 25px !important;">
+                        <img id="moon" class="size-image d-none" src="img/moon-svgrepo-com.svg"
+                            style="width: 25px !important;">
+                        <div class="form-check form-switch mt-1">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <div class="container-fluid">
+        <div class=" row align-items-stretch sun-mode-1 " id="dark-mode-13">
+            <div class=" card-postion mt-4 col-xxl-8 ">
+                <div class="card text-black bg-primary mb-3 koli sun-mode-2" id="dark-mode-3"
+                    style="border-radius: 32px !important; border: none !important;">
+                    <div class="spinner-border text-primary mx-auto mt-5 mb-4" role="status" id="main-data-spinner">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div id="main-data" class="d-none">
+                        <div class="card-header mt-1 sun-mode-2" id="dark-mode-4"
+                            style=" border-radius: 32px !important; border-bottom: none !important;">
+                            <p class="mt-3 title-size ms-4 sun-mode-3" id="dark-mode-5">This Ethereum Wallet Address has
+                                <span id="token-count"></span> assets
+                                !
+                            </p>
+                        </div>
+                        <div class=" etelat-koli d-flex sun-mode-3" id="dark-mode-6">
+                            <div class="ms-5 " style="opacity: calc();">
+                                <div>
+                                    <span style="font-size: 27px;font-weight: bold;" id="total-balance"></span>
+                                    <p style="font-size: 18px;font-weight: bold; opacity: .7;">Total Value </p>
+                                </div>
+                            </div>
+                            <div class="ms-5">
+                                <div class="">
+                                    <span style="font-size: 27px;font-weight: bold;" id="total-value-btc"></span>
+                                    <p style="font-size: 18px;font-weight: bold; opacity: .7;">BTC Total Value </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body row m-xl-4" id="token-container">
+                            <!-- colors: #fee4cb , #ff942e , #e9e7fd , #4f3ff0 , #dbf6fd , #ffd3e2 , #c8f7dc , #d5deff , #e9e7fd , #dbf6fd , #ffd3e2 ,  -->
+                            <template id="token-template">
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-white bg-primary h-100"
+                                        style="border-radius: 30px !important; background-color: #fee4cb !important; color: black !important;">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img class="coin-logo flex-shrink-0 me-2" src=""
+                                                    style="max-width: 80px ;" alt="">
+                                                <div class="text-center px-3"
+                                                    style="background-color: none; border: 2px solid #ff942e; border-radius: 15px !important; display: flex; justify-content: center;">
+                                                    <span class="token-name mt-1"></span>
+                                                </div>
+                                            </div>
+                                            <div style="text-align: center !important;">
+                                                <span class="d-block mt-md-2">Total value = <span
+                                                        class="total-balance"></span> </span>
+                                                <span class="d-block mt-md-2 mt-1">BTC value = <span
+                                                        class="btc-balance"></span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4">
+                <div class="position-sticky" style="top: 6vh">
+                    <div class="mt-4">
+                        <div class="card text-white bg-primary col-12 mb-3 garph sun-mode-2" id="dark-mode-7"
+                            style=" border-radius: 32px !important; text-align: center; border: none !important;">
+                            <div class="card-header mt-3 mx-5"
+                                style=" border: none !important; text-align: center; background-color: unset !important; opacity: 0.6;">
+                                <span class="sun-mode-3" id="dark-mode-8">Asset Dispersion Chart</span>
+                            </div>
+                            <div id="chart-container" class="position-relative">
+                                <div id="chart-spinner"
+                                    class="position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                                    <div class="spinner-border text-primary mx-auto mt-4 mb-5" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                                <div id="main" class="w-100 ps-xl-4 mt-4 nmodar " style="min-height:350px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ms-1">
+                        <div class="card text-white bg-primary col-12 mb-3 trx sun-mode-2" id="dark-mode-9"
+                            style="border-radius: 32px !important; border:none !important;">
+                            <div class="card-header mt-3 mx-3 d-flex"
+                                style=" border: none !important; background-color: unset ; text-align: center; justify-content: space-between;">
+                                <span class="ms-3 ms-md-4 sun-mode-3 last-three" style=" opacity: 0.6;"
+                                    id="dark-mode-10">Last Three
+                                    Transactions</span>
+                                <button class="see-all-trx btn sun-mode-4 px-3 py-0 view-all" id="dark-mode-12"
+                                    style="border-radius: 1rem !important;font-family: 'Times New Roman', Times, serif;"
+                                    type="button">View All</button>
+                            </div>
+                            <div class="card-header mt-2 mx-3 d-flex justify-content-between"
+                                style=" border-radius: 32px !important; box-shadow: 2px 3px 8px #888888; background-color: #d5deff;">
+                                <span class="ps-lg-4 vorodi" style="color: black;">Value</span>
+                                <span class="vorodi" style="color: black;">Block</span>
+                                <span class="vorodi" style="color: black;">Time</span>
+                                <span class="pe-lg-4 vorodi" style="color: black;">Status</span>
+                            </div>
+                            <template id="transaction-template">
+                                <div class="card-header mt-2 mx-3 d-flex justify-content-between"
+                                    style=" border-radius: 32px !important; box-shadow: 2px 3px 8px #888888; background-color: #fee4cb;">
+                                    <span class="trx-value valuetrx ps-lg-4" style="color: black; opacity: 0.7;"></span>
+                                    <span class="trx-block valuetrx" style="color: black; opacity: 0.7;"></span>
+                                    <span class="trx-time valuetrx" style="color: black; opacity: 0.7;"></span>
+                                    <span class="trx-status valuetrx pe-lg-4"
+                                        style="color: black; opacity: 0.7;"></span>
+                                </div>
+                            </template>
+                            <div id="transaction-container" class="mb-4">
+                                <div class="text-center" id="transactions-spinner">
+                                    <div class="spinner-border text-primary mx-auto mt-5 mb-4" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="js/search/sidebars.js"></script>
+    <script src="js/search/scripts.js"></script>
+</body>
+
+</html>
